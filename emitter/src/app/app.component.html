@@ -1,0 +1,8 @@
+
+<!-- <app-counter [childComponent]="currentComponent"></app-counter> -->
+<app-counter (newItemEvent)="addItem($event)"></app-counter>
+<ul>
+    <h6>This is parent section.</h6>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<router-outlet></router-outlet>

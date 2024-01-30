@@ -1,0 +1,9 @@
+<h1>My name is, {{name}}</h1>
+
+<img [src]="imageUrl" alt="">
+
+<button [disabled]="switch">dissable button</button>
+<button (click)="openClose()">Click me</button>
+
+<app-child [message]="'Hello, welcome to child component!'"></app-child>
+<router-outlet></router-outlet>
